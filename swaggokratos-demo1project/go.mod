@@ -6,9 +6,8 @@ require (
 	github.com/go-kratos/kratos/v2 v2.8.4
 	github.com/go-xlan/yaml-go-edit v0.0.5
 	github.com/google/wire v0.6.0
-	github.com/orzkratos/swaggokratos v0.0.3
+	github.com/orzkratos/swaggokratos v0.0.4
 	github.com/orzkratos/zapkratos v0.0.5
-	github.com/yyle88/must v0.0.20
 	github.com/yyle88/rese v0.0.8
 	github.com/yyle88/zaplog v0.0.21
 	go.uber.org/automaxprocs v1.6.0
@@ -58,6 +57,7 @@ require (
 	github.com/ugorji/go/codec v1.2.12 // indirect
 	github.com/yyle88/done v1.0.24 // indirect
 	github.com/yyle88/erero v1.0.20 // indirect
+	github.com/yyle88/must v0.0.20 // indirect
 	github.com/yyle88/mutexmap v1.0.10 // indirect
 	github.com/yyle88/runpath v1.0.23 // indirect
 	go.opentelemetry.io/otel v1.32.0 // indirect

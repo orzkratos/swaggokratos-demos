@@ -1,7 +1,6 @@
 package server
 
 import (
-	"regexp"
 	demo1project "swaggokratos-demo1project"
 	v1 "swaggokratos-demo1project/api/helloworld/v1"
 	"swaggokratos-demo1project/internal/conf"
@@ -13,7 +12,6 @@ import (
 	"github.com/orzkratos/swaggokratos"
 	"github.com/orzkratos/swaggokratos/swaggogin"
 	"github.com/orzkratos/zapkratos"
-	"github.com/yyle88/must"
 	"github.com/yyle88/zaplog"
 )
 
@@ -53,13 +51,6 @@ func serveSwaggerHttpDocument(c *conf.Server, srv *http.Server) {
 		},
 	})
 
-	zapLog.SUG.Infoln("[DOC]", "(http://127.0.0.1:"+MustGetPortNum(c.Http.Addr)+"/doc/swagger/a/index.html)")
+	zapLog.SUG.Infoln("[DOC]", "(http://127.0.0.1:"+swaggokratos.MustGetPortNum(c.Http.Addr)+"/doc/swagger/a/index.html)")
 	zapLog.SUG.Infoln("接口文档添加成功")
-}
-
-func MustGetPortNum(address string) string {
-	re := regexp.MustCompile(`^(\d+)\.(\d+)\.(\d+)\.(\d+):(\d+)$`)
-	matches := re.FindStringSubmatch(address)
-	must.Len(matches, 6)
-	return matches[5] // 第 5 个捕获组是端口
 }

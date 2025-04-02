@@ -102,8 +102,8 @@ github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd h1:TRLaZ9cD/w
 github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd/go.mod h1:6dJC0mAP4ikYIbvyc7fijjWJddQyLn8Ig3JB5CqoB9Q=
 github.com/modern-go/reflect2 v1.0.2 h1:xBagoLtFs94CBntxluKeaWgTMpvLxC4ur3nMaC9Gz0M=
 github.com/modern-go/reflect2 v1.0.2/go.mod h1:yWuevngMOJpCy52FWWMvUC8ws7m/LJsjYzDa0/r8luk=
-github.com/orzkratos/swaggokratos v0.0.3 h1:LsDkGP9yxp2PCq26a074WPl1Nn9gfFoPnvBgE0ticiE=
-github.com/orzkratos/swaggokratos v0.0.3/go.mod h1:x7xNWN2CduuQ9BV0N24dv3xvlBDizkz4/J+C3ocIhcc=
+github.com/orzkratos/swaggokratos v0.0.4 h1:Chi6VrcAplfn0fdJscpqWjo/BhmUksfqbN6UXFIa40o=
+github.com/orzkratos/swaggokratos v0.0.4/go.mod h1:VR6chrlnmv/5zcbTRYHrgCSvVLMLvUSCwW+COkDcvlk=
 github.com/orzkratos/zapkratos v0.0.5 h1:vMq6zLJ0yfCZaGUJA9OZQIOTzjpGJHOYuHQDa/RtdxY=
 github.com/orzkratos/zapkratos v0.0.5/go.mod h1:PWVIRsPq/WQENhgBjR9Nd0Hf4fIeTUDDOx6RXwa6VW0=
 github.com/pelletier/go-toml/v2 v2.2.3 h1:YmeHyLY8mFWbdkNWwpr+qIL2bEqT0o95WSdkNHvL12M=
