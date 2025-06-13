@@ -7,10 +7,11 @@ require (
 	github.com/go-xlan/yaml-go-edit v0.0.5
 	github.com/google/wire v0.6.0
 	github.com/orzkratos/swaggokratos v0.0.4
-	github.com/orzkratos/zapkratos v0.0.5
+	github.com/orzkratos/zapkratos v0.0.6
+	github.com/yyle88/done v1.0.26
 	github.com/yyle88/rese v0.0.10
 	github.com/yyle88/runpath v1.0.23
-	github.com/yyle88/zaplog v0.0.22
+	github.com/yyle88/zaplog v0.0.24
 	go.uber.org/automaxprocs v1.6.0
 	google.golang.org/genproto/googleapis/api v0.0.0-20250106144421-5f5ef82da422
 	google.golang.org/grpc v1.71.1
@@ -18,17 +19,17 @@ require (
 )
 
 require (
-	dario.cat/mergo v1.0.1 // indirect
+	dario.cat/mergo v1.0.2 // indirect
 	github.com/KyleBanks/depth v1.2.1 // indirect
 	github.com/bytedance/sonic v1.12.9 // indirect
 	github.com/bytedance/sonic/loader v0.2.3 // indirect
 	github.com/cloudwego/base64x v0.1.5 // indirect
-	github.com/fsnotify/fsnotify v1.6.0 // indirect
+	github.com/fsnotify/fsnotify v1.9.0 // indirect
 	github.com/gabriel-vasile/mimetype v1.4.8 // indirect
 	github.com/gin-contrib/sse v1.0.0 // indirect
 	github.com/gin-gonic/gin v1.10.0 // indirect
 	github.com/go-kratos/aegis v0.2.0 // indirect
-	github.com/go-logr/logr v1.4.2 // indirect
+	github.com/go-logr/logr v1.4.3 // indirect
 	github.com/go-logr/stdr v1.2.2 // indirect
 	github.com/go-openapi/jsonpointer v0.21.0 // indirect
 	github.com/go-openapi/jsonreference v0.21.0 // indirect
@@ -56,9 +57,8 @@ require (
 	github.com/swaggo/swag v1.16.4 // indirect
 	github.com/twitchyliquid64/golang-asm v0.15.1 // indirect
 	github.com/ugorji/go/codec v1.2.12 // indirect
-	github.com/yyle88/done v1.0.25 // indirect
-	github.com/yyle88/erero v1.0.19 // indirect
-	github.com/yyle88/must v0.0.21 // indirect
+	github.com/yyle88/erero v1.0.21 // indirect
+	github.com/yyle88/must v0.0.25 // indirect
 	github.com/yyle88/mutexmap v1.0.13 // indirect
 	go.opentelemetry.io/auto/sdk v1.1.0 // indirect
 	go.opentelemetry.io/otel v1.34.0 // indirect
