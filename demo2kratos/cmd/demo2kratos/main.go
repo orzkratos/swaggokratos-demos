@@ -7,6 +7,7 @@ import (
 	"github.com/go-kratos/kratos/v2"
 	"github.com/go-kratos/kratos/v2/config"
 	"github.com/go-kratos/kratos/v2/config/file"
+	"github.com/go-kratos/kratos/v2/encoding/json"
 	"github.com/go-kratos/kratos/v2/log"
 	"github.com/go-kratos/kratos/v2/middleware/tracing"
 	"github.com/go-kratos/kratos/v2/transport/grpc"
@@ -29,6 +30,12 @@ var (
 
 func init() {
 	flag.StringVar(&flagconf, "conf", "./configs", "config path, eg: -conf config.yaml")
+
+	//配置http服务回复的json的字段名称风格，是按照proto里写的名称，还是按照小写驼峰的规则
+	//json.MarshalOptions.UseProtoNames = true  //UseProtoNames uses proto field name instead of lowerCamelCase name in JSON
+	//当你不配置的时候，就不能使用proto里自定的名称，而是按照默认的小写驼峰的风格
+	//推荐不要配置，即，使用默认 false 的规则，这样保证和其它语言默认配置相同（否则生成其它语言消息时还要配置（但还学不会如何配置））
+	json.MarshalOptions.UseProtoNames = true
 }
 
 func newApp(logger log.Logger, gs *grpc.Server, hs *http.Server) *kratos.App {

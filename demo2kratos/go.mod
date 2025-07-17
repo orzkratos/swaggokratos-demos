@@ -9,6 +9,7 @@ require (
 	github.com/orzkratos/swaggokratos v0.0.5
 	github.com/orzkratos/zapkratos v0.0.7
 	github.com/yyle88/done v1.0.26
+	github.com/yyle88/mutexmap v1.0.14
 	github.com/yyle88/rese v0.0.10
 	github.com/yyle88/runpath v1.0.23
 	github.com/yyle88/zaplog v0.0.26
@@ -16,6 +17,7 @@ require (
 	google.golang.org/genproto/googleapis/api v0.0.0-20250106144421-5f5ef82da422
 	google.golang.org/grpc v1.71.1
 	google.golang.org/protobuf v1.36.6
+	gopkg.in/yaml.v3 v3.0.1
 )
 
 require (
@@ -59,7 +61,6 @@ require (
 	github.com/ugorji/go/codec v1.3.0 // indirect
 	github.com/yyle88/erero v1.0.23 // indirect
 	github.com/yyle88/must v0.0.25 // indirect
-	github.com/yyle88/mutexmap v1.0.14 // indirect
 	go.opentelemetry.io/auto/sdk v1.1.0 // indirect
 	go.opentelemetry.io/otel v1.34.0 // indirect
 	go.opentelemetry.io/otel/metric v1.34.0 // indirect
@@ -74,5 +75,4 @@ require (
 	golang.org/x/text v0.22.0 // indirect
 	golang.org/x/tools v0.30.0 // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20250218202821-56aae31c358a // indirect
-	gopkg.in/yaml.v3 v3.0.1 // indirect
 )

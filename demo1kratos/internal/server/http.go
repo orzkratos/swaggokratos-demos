@@ -46,7 +46,7 @@ func serveSwaggerHttpDocument(c *conf.Server, srv *http.Server) {
 		{
 			SwaggerPath: "/swagger/a/*any",
 			ExplorePath: "/abc/openapi-a.yaml",
-			ContentData: demo1kratos.GetOpenapiContent("自定义的文档标题"),
+			ContentData: demo1kratos.GetOpenapiContent("demo1kratos-title"),
 		},
 	})
 

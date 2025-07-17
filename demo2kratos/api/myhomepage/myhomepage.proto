@@ -1,0 +1,55 @@
+syntax = "proto3";
+
+package api.myhomepage;
+
+import "google/api/annotations.proto";
+
+option go_package = "demo2kratos/api/myhomepage;myhomepage";
+option java_multiple_files = true;
+option java_package = "api.myhomepage";
+
+service Myhomepage {
+  rpc GetMyName (GetMyNameRequest) returns (GetMyNameReply) {
+    option (google.api.http) = {
+      get: "/myhomepage/name/{account_name}"
+    };
+  }
+	rpc GetMyInfo (GetMyInfoRequest) returns (GetMyInfoReply) {
+    option (google.api.http) = {
+      get: "/myhomepage/info"
+    };
+  }
+  rpc SetMyInfo (SetMyInfoRequest) returns (SetMyInfoReply) {
+    option (google.api.http) = {
+      post: "/myhomepage/info"
+      body: "*"
+    };
+  }
+}
+
+message GetMyNameRequest {
+  string account_name = 1;
+}
+message GetMyNameReply {
+  string name = 1;
+}
+
+message GetMyInfoRequest {
+  string account_name = 1;
+}
+message GetMyInfoReply {
+  string name = 1;
+  string myFavoriteDevLanguage = 2;
+  string english_name = 3;
+  string chinese_name = 4;
+}
+
+message SetMyInfoRequest {
+  string name = 1;
+  string myFavoriteDevLanguage = 2;
+  string english_name = 3;
+  string chinese_name = 4;
+}
+message SetMyInfoReply {
+  string message = 1;
+}

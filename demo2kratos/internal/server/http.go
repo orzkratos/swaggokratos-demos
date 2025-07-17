@@ -6,6 +6,7 @@ import (
 	"github.com/go-kratos/kratos/v2/transport/http"
 	"github.com/orzkratos/demokratos/demo2kratos"
 	v1 "github.com/orzkratos/demokratos/demo2kratos/api/helloworld/v1"
+	"github.com/orzkratos/demokratos/demo2kratos/api/myhomepage"
 	"github.com/orzkratos/demokratos/demo2kratos/internal/conf"
 	"github.com/orzkratos/demokratos/demo2kratos/internal/service"
 	"github.com/orzkratos/swaggokratos"
@@ -15,7 +16,7 @@ import (
 )
 
 // NewHTTPServer new an HTTP server.
-func NewHTTPServer(c *conf.Server, greeter *service.GreeterService, logger log.Logger) *http.Server {
+func NewHTTPServer(c *conf.Server, greeter *service.GreeterService, myHomepageService *service.MyhomepageService, logger log.Logger) *http.Server {
 	var opts = []http.ServerOption{
 		http.Middleware(
 			recovery.Recovery(),
@@ -32,6 +33,7 @@ func NewHTTPServer(c *conf.Server, greeter *service.GreeterService, logger log.L
 	}
 	srv := http.NewServer(opts...)
 	v1.RegisterGreeterHTTPServer(srv, greeter)
+	myhomepage.RegisterMyhomepageHTTPServer(srv, myHomepageService)
 	serveSwaggerHttpDocument(c, srv)
 	return srv
 }
@@ -45,7 +47,7 @@ func serveSwaggerHttpDocument(c *conf.Server, srv *http.Server) {
 		{
 			SwaggerPath: "/swagger/a/*any",
 			ExplorePath: "/abc/openapi-a.yaml",
-			ContentData: demo2kratos.GetOpenapiContent("自定义的文档标题"),
+			ContentData: demo2kratos.GetOpenapiContent("demo2kratos-title"),
 		},
 	})
 
